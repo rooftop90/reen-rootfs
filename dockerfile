@@ -18,7 +18,7 @@ RUN dnf install vim tree wget tar -y
 RUN ["/bin/bash", "-c", "./setup-az.sh"]
 
 # run k8s tools script
-RUN ["/bin/bash", "-c", "./setup-az.sh"]
+RUN ["/bin/bash", "-c", "./setup-k8s.sh"]
 
 # reset workdir
 WORKDIR /
