@@ -7,7 +7,7 @@ mv kubectl /bin
 #########################################
 ################# helm ##################
 # version: 3.5.2
-download helm
+# download helm
 wget https://get.helm.sh/helm-v3.5.2-linux-amd64.tar.gz
 
 # untar and move
