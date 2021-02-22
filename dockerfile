@@ -12,7 +12,7 @@ RUN chmod 700 -R /build/
 RUN dnf update -y
 
 # install system tools & utilities
-RUN dnf install vim tree wget -y
+RUN dnf install vim tree wget tar -y
 
 # run az tools script
 RUN ["/bin/bash", "-c", "./setup-az.sh"]
