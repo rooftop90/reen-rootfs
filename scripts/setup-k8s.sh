@@ -2,8 +2,8 @@
 # download kubectl
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
 
-# mv kubectl
-mv kubectl /bin
+# mv kubectl & set permissions
+mv kubectl /bin && chmod 731 /bin/kubectl 
 #########################################
 ################# helm ##################
 # version: 3.5.2
