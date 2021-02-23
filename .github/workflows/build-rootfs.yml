@@ -27,10 +27,12 @@ jobs:
         run: ls -lah
 
       - name: docker build
-        run: docker build $GITHUB_WORKSPACE
-        
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+        run: docker build $GITHUB_WORKSPACE --tag rootfs-image
+
+      - name: run & export
+        run: docker run -d --name reen-rootfs rootfs-image && docker export reen-rootfs > reen_rootfs.tar.gz
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: reen-rootfs-artifact
+          path: $GITHUB_WORKSPACE/reen_rootfs.tar.gz
