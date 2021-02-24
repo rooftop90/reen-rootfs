@@ -34,4 +34,4 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: reen-rootfs-artifact
-          path: $GITHUB_WORKSPACE/reen_rootfs.tar.gz
+          path: reen_rootfs.tar.gz
