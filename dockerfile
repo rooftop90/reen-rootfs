@@ -12,7 +12,7 @@ RUN chmod 700 -R /build/
 RUN dnf update -y
 
 # install system tools & utilities
-RUN dnf install vim tree wget tar -y
+RUN dnf install vim tree wget tar hostname -y
 
 # run tools script
 RUN ["/bin/bash", "-c", "./setup-tools.sh"]
