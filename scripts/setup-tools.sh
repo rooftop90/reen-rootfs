@@ -7,10 +7,10 @@ dnf install powershell -y
 ########################################
 ################# vault ################
 # download vault
-wget https://releases.hashicorp.com/vault/1.6.2/vault_1.6.2_linux_amd64.zip
+wget https://releases.hashicorp.com/vault/1.7.1/vault_1.7.1_linux_amd64.zip
 
 # unzip and move
-unzip vault_1.6.2_linux_amd64.zip && mv vault /bin
+unzip vault_1.7.1_linux_amd64.zip && mv vault /bin
 ########################################
 ################# gacp #################
 # install nodejs
