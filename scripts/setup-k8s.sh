@@ -8,11 +8,11 @@ mv kubectl /bin && chmod 731 /bin/kubectl
 ################# helm ##################
 # version: 3.5.2
 # download helm
-wget https://get.helm.sh/helm-v3.5.2-linux-amd64.tar.gz
+wget https://get.helm.sh/helm-v3.5.4-linux-amd64.tar.gz
 
 # untar and move
-tar -xzf helm-v3.5.2-linux-amd64.tar.gz && mv linux-amd64/helm /bin
+tar -xzf helm-v3.5.4-linux-amd64.tar.gz && mv linux-amd64/helm /bin
 
 # cleanup
-rm helm-v3.5.2-linux-amd64.tar.gz && rm -rf linux-amd64
+rm helm-v3.5.4-linux-amd64.tar.gz && rm -rf linux-amd64
 #########################################
