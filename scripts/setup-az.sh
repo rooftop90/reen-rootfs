@@ -13,14 +13,14 @@ gpgkey=https://packages.microsoft.com/keys/microsoft.asc" | tee /etc/yum.repos.d
 dnf install azure-cli -y
 #########################################
 ################ az copy ################
-# version 10.8.0
+# version 10.10.0
 
 # download azcopy
 wget https://aka.ms/downloadazcopy-v10-linux
 
 # untar and mv
-tar -xzf downloadazcopy-v10-linux && mv azcopy_linux_amd64_10.8.0/azcopy /bin
+tar -xzf downloadazcopy-v10-linux && mv azcopy_linux_amd64_10.10.0/azcopy /bin
 
 # cleanup
-rm -f downloadazcopy-v10-linux && rm -rf azcopy_linux_amd64_10.8.0/
+rm -f downloadazcopy-v10-linux && rm -rf azcopy_linux_amd64_10.10.0/
 #########################################
